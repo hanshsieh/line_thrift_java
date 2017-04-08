@@ -2,7 +2,7 @@
 LINE Java library generated from thrift file.
 This isn't official Java client. This is generated from the Thrift file of LINE internal protocol that is used
 by desktop client. The thrift file s based on the [file](http://altrepo.eu/git/line-protocol/blob/master/line.thrift),
-and has been modified a little.
+and has been modified a little.  
 The Java code was generated with the following command on Windows:
 
 ```bash

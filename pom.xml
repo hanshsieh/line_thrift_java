@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.linecorp.thrift</groupId>
-  <artifactId>line_thrift</artifactId>
+  <artifactId>line-thrift</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
