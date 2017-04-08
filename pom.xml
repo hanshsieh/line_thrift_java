@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.linecorp.thrift</groupId>
+  <artifactId>line_thrift</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>line_thrift</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+
+    <!--
+        The following dependencies are required by io.cslinmiso.LineAPI4J
+        Don't use 0.10.0 for now, because TServiceClient in 0.10.0 will print log
+        in the console, it has been resolved by ticket
+        https://issues.apache.org/jira/browse/THRIFT-4062
+        Wait for the newer release version.
+    -->
+    <dependency>
+      <groupId>org.apache.thrift</groupId>
+      <artifactId>libthrift</artifactId>
+      <version>0.9.3</version>
+    </dependency>
+  </dependencies>
+</project>
