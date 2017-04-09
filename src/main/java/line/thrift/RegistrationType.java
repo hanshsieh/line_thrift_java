@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum RegistrationType implements org.apache.thrift.TEnum {
   PHONE(0),
   EMAIL_WAP(1),

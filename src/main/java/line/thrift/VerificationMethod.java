@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum VerificationMethod implements org.apache.thrift.TEnum {
   NO_AVAILABLE(0),
   PIN_VIA_SMS(1),

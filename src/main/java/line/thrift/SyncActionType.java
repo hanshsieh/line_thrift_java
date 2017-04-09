@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum SyncActionType implements org.apache.thrift.TEnum {
   SYNC(0),
   REPORT(1);

@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum VerificationResult implements org.apache.thrift.TEnum {
   FAILED(0),
   OK_NOT_REGISTERED_YET(1),

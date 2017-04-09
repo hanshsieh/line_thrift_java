@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum SpammerReason implements org.apache.thrift.TEnum {
   OTHER(0),
   ADVERTISING(1),

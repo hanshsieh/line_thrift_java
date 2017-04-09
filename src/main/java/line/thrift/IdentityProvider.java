@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum IdentityProvider implements org.apache.thrift.TEnum {
   UNKNOWN(0),
   LINE(1),

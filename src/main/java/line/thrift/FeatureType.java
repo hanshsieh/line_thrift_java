@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum FeatureType implements org.apache.thrift.TEnum {
   OBJECT_STORAGE(1);
 

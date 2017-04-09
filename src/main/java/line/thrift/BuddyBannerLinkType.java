@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum BuddyBannerLinkType implements org.apache.thrift.TEnum {
   BUDDY_BANNER_LINK_HIDDEN(0),
   BUDDY_BANNER_LINK_MID(1),

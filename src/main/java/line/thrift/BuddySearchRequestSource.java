@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum BuddySearchRequestSource implements org.apache.thrift.TEnum {
   NA(0),
   FRIEND_VIEW(1),

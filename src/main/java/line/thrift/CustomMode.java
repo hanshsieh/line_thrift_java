@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum CustomMode implements org.apache.thrift.TEnum {
   PROMOTION_FRIENDS_INVITE(1),
   CAPABILITY_SERVER_SIDE_SMS(2),

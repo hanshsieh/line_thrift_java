@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ErrorCode implements org.apache.thrift.TEnum {
   ILLEGAL_ARGUMENT(0),
   AUTHENTICATION_FAILED(1),

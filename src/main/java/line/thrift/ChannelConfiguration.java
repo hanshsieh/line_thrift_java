@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ChannelConfiguration implements org.apache.thrift.TEnum {
   MESSAGE(0),
   MESSAGE_NOTIFICATION(1),

@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum PayloadType implements org.apache.thrift.TEnum {
   PAYLOAD_BUY(101),
   PAYLOAD_CS(111),

@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ProductEventType implements org.apache.thrift.TEnum {
   NO_EVENT(0),
   CARRIER_ANY(65537),

@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum GroupAttribute implements org.apache.thrift.TEnum {
   NAME(1),
   PICTURE_STATUS(2),

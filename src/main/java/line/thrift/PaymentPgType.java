@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum PaymentPgType implements org.apache.thrift.TEnum {
   PAYMENT_PG_NONE(0),
   PAYMENT_PG_AU(1),

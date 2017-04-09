@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum PaymentType implements org.apache.thrift.TEnum {
   PAYMENT_APPLE(1),
   PAYMENT_GOOGLE(2);

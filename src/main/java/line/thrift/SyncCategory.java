@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum SyncCategory implements org.apache.thrift.TEnum {
   PROFILE(0),
   SETTINGS(1),

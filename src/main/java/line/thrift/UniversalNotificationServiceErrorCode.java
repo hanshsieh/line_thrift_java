@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum UniversalNotificationServiceErrorCode implements org.apache.thrift.TEnum {
   INTERNAL_ERROR(0),
   INVALID_KEY(1),

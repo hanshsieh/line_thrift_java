@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ProfileAttribute implements org.apache.thrift.TEnum {
   EMAIL(1),
   DISPLAY_NAME(2),

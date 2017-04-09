@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ContactRelation implements org.apache.thrift.TEnum {
   ONEWAY(0),
   BOTH(1),

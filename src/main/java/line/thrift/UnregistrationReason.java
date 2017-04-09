@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum UnregistrationReason implements org.apache.thrift.TEnum {
   UNREGISTRATION_REASON_UNREGISTER_USER(1),
   UNREGISTRATION_REASON_UNBIND_DEVICE(2);

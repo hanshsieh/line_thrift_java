@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum SettingsAttribute implements org.apache.thrift.TEnum {
   NOTIFICATION_ENABLE(1),
   NOTIFICATION_MUTE_EXPIRATION(2),

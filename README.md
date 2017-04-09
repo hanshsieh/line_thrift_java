@@ -6,7 +6,7 @@ and has been modified a little.
 The Java code was generated with the following command on Windows:
 
 ```bash
-thrift-0.9.3.exe --gen java:beans=,fullcamel= line.thrift
+thrift-0.9.3.exe --gen java:beans=,fullcamel= -out src/main/java line.thrift
 ```
 
 It was generated from Thrift 0.9.3 instead of 0.10.0 because TServiceClient in 0.10.0 will print log

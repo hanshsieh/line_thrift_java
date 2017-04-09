@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ContactSetting implements org.apache.thrift.TEnum {
   CONTACT_SETTING_NOTIFICATION_DISABLE(1),
   CONTACT_SETTING_DISPLAY_NAME_OVERRIDE(2),

@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum WapInvitationType implements org.apache.thrift.TEnum {
   REGISTRATION(1),
   CHAT(2);

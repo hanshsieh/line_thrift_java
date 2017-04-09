@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ChannelErrorCode implements org.apache.thrift.TEnum {
   ILLEGAL_ARGUMENT(0),
   INTERNAL_ERROR(1),

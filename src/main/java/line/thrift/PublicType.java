@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum PublicType implements org.apache.thrift.TEnum {
   HIDDEN(0),
   PUBLIC(1000);

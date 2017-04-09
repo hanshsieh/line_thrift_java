@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum NotificationType implements org.apache.thrift.TEnum {
   APPLE_APNS(1),
   GOOGLE_C2DM(2),

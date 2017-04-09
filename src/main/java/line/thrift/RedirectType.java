@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum RedirectType implements org.apache.thrift.TEnum {
   NONE(0),
   EXPIRE_SECOND(1);

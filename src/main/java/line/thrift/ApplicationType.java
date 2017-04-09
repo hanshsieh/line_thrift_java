@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ApplicationType implements org.apache.thrift.TEnum {
   IOS(16),
   IOS_RC(17),

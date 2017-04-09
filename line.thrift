@@ -1,4 +1,4 @@
-namespace java com.linecorp.thrift
+namespace java line.thrift
 enum ApplicationType {
     IOS = 16;
     IOS_RC = 17;
@@ -490,7 +490,6 @@ enum SettingsAttribute {
     NOTIFICATION_GROUP_INVITATION = 8;
     NOTIFICATION_SHOW_MESSAGE = 16;
     NOTIFICATION_INCOMING_CALL = 32;
-    NOTIFICATION_ENABLE = 33;
     PRIVACY_SYNC_CONTACTS = 64;
     PRIVACY_SEARCH_BY_PHONE_NUMBER = 128;
     NOTIFICATION_SOUND_MESSAGE = 256;

@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum ContactAttribute implements org.apache.thrift.TEnum {
   CONTACT_ATTRIBUTE_CAPABLE_VOICE_CALL(1),
   CONTACT_ATTRIBUTE_CAPABLE_VIDEO_CALL(2),

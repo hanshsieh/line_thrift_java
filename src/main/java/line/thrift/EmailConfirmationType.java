@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum EmailConfirmationType implements org.apache.thrift.TEnum {
   SERVER_SIDE_EMAIL(0),
   CLIENT_SIDE_EMAIL(1);

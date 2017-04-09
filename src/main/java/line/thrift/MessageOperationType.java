@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum MessageOperationType implements org.apache.thrift.TEnum {
   SEND_MESSAGE(1),
   RECEIVE_MESSAGE(2),

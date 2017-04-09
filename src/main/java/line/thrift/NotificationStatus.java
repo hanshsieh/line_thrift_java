@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum NotificationStatus implements org.apache.thrift.TEnum {
   NOTIFICATION_ITEM_EXIST(1),
   TIMELINE_ITEM_EXIST(2),

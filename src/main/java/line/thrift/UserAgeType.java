@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum UserAgeType implements org.apache.thrift.TEnum {
   OVER(1),
   UNDER(2),

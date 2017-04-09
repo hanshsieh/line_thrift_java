@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum OpType implements org.apache.thrift.TEnum {
   END_OF_OPERATION(0),
   UPDATE_PROFILE(1),

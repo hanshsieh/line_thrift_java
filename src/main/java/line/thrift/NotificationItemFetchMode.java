@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum NotificationItemFetchMode implements org.apache.thrift.TEnum {
   ALL(0),
   APPEND(1);

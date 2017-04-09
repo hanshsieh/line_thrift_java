@@ -7,6 +7,10 @@
 package line.thrift;
 
 
+import java.util.Map;
+import java.util.HashMap;
+import org.apache.thrift.TEnum;
+
 public enum CarrierCode implements org.apache.thrift.TEnum {
   NOT_SPECIFIED(0),
   JP_DOCOMO(1),
