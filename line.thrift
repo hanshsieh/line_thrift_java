@@ -2012,6 +2012,10 @@ service TalkService {
      * If the ticket has been invalidated (e.g. the person who generated the ticket
      * has reissue a new ticket or has left the group) or doesn't exist,
      * a TalkException with code NOT_FOUND and message "Ticket not found" will be thrown.
+     *
+     * @param reqSeq    Request sequence number.
+     * @param groupMid  Group ID.
+     * @paraam ticketId Ticket ID.
      */
     void acceptGroupInvitationByTicket(
         1: i32 reqSeq,
@@ -2142,6 +2146,10 @@ service TalkService {
     /**
      * Find a group by a group invitation ticket.
      * If the group isn't found, a TalkException with code NOT_FOUND is thrown.
+     *
+     * @param ticketId Ticket ID.
+     *
+     * @return Group The group found. Not null.
      */
     Group findGroupByTicket(
         1: string ticketId) throws(1: TalkException e);
@@ -2487,6 +2495,13 @@ service TalkService {
     * Reissue the invitation ticket for the group.
     * You must have been a member of the group; otherwise, you will get
     * a TalkException with code NOT_A_MEMBER.
+    * On iOS app, the genereated invitation URL will be in the form "http://line.me/ti/g/{ticketId}".
+    * On Android app, it will be in the form "http://line.me/R/ti/g/{ticketId}".
+    * But both forms work well on either platform.
+    *
+    * @param groupMid Group ID.
+    *
+    * @return Ticket ID.
     **/
     string reissueGroupTicket(
         1: string groupMid) throws(1: TalkException e);
