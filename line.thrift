@@ -2005,6 +2005,19 @@ service TalkService {
         1: i32 reqSeq,
         2: string groupId) throws(1: TalkException e);
 
+    /**
+     * Accept a group invitation by invitation ticket.
+     * The given group ID must match the group ID of the ticket; otherwise,
+     * a TalkException with code NOT_FOUND and message "Ticket mismatched" will be thrown.
+     * If the ticket has been invalidated (e.g. the person who generated the ticket
+     * has reissue a new ticket or has left the group) or doesn't exist,
+     * a TalkException with code NOT_FOUND and message "Ticket not found" will be thrown.
+     */
+    void acceptGroupInvitationByTicket(
+        1: i32 reqSeq,
+        2: string groupMid,
+        3: string ticketId) throws(1: TalkException e);
+
     void acceptProximityMatches(
         2: string sessionId,
         3: set<string> ids) throws(1: TalkException e);
@@ -2125,6 +2138,13 @@ service TalkService {
 
     Contact findContactByUserTicket(
         2: string ticketId) throws(1: TalkException e);
+
+    /**
+     * Find a group by a group invitation ticket.
+     * If the group isn't found, a TalkException with code NOT_FOUND is thrown.
+     */
+    Group findGroupByTicket(
+        1: string ticketId) throws(1: TalkException e);
 
     map<string, Contact> findContactsByEmail(
         2: set<string> emails) throws(1: TalkException e);
@@ -2461,6 +2481,15 @@ service TalkService {
     string reissueUserTicket(
         3: i64 expirationTime,
         4: i32 maxUseCount) throws(1: TalkException e);
+
+
+    /**
+    * Reissue the invitation ticket for the group.
+    * You must have been a member of the group; otherwise, you will get
+    * a TalkException with code NOT_A_MEMBER.
+    **/
+    string reissueGroupTicket(
+        1: string groupMid) throws(1: TalkException e);
 
     void rejectGroupInvitation(
         1: i32 reqSeq,
